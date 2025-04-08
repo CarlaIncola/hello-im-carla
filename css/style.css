@@ -311,6 +311,11 @@
     border-style: solid;
 }
 
+.contact__text {
+    font-size: 15px;
+    line-height: 22px;
+}
+
 .contact__icons {
     display: flex;
     flex-direction: column;
