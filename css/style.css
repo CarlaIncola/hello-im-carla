@@ -56,11 +56,11 @@
 .header__nav {
     display: flex;
     position: fixed;
-    justify-content: center;
+    justify-content: flex-end;
     top: 0;
     left: 0;
     min-width: 100%;
-    padding: 8px 0px;
+    padding: 20px 0px;
 }
 
 .header__menu {
@@ -69,7 +69,8 @@
 }
 
 .header__menu-item {
-    padding-right: 24px;
+    padding-right: 40px;
+    font-size: 14px;
 }
 
 .header__link {
