@@ -66,15 +66,19 @@
     display: flex;
     position: fixed;
     justify-content: flex-end;
+    align-items: center;
     top: 0;
     left: 0;
-    min-width: 100%;
+    width: 100%;
     padding: 20px 0px;
+    z-index: 1000;
 }
 
 .header__menu {
     list-style-type: none;
     display: flex;
+    margin: 0;
+    padding: 0;
 }
 
 .header__menu-item {
