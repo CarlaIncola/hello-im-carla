@@ -16,7 +16,7 @@
 /*****   GENERAL SETTINGS   ******/
 /*********************************/
 
-    /*   PAGES TITLES   */
+    /*   TEXTS   */
     
     .page__title {
         font-weight: 200;
@@ -24,6 +24,15 @@
         text-align: center;
         margin-top: 80px;
     }
+
+    .page__subtitle {
+        font-size: 16px;
+        font-weight: 300;
+        border-bottom: 1px solid;
+        border-color: var(--bs-gray);
+        padding-bottom: 8px;
+    }
+    
 
     .bold-text {
         font-weight: 600 !important;
@@ -99,60 +108,8 @@
     bottom: 0;
     flex-direction: column;
     width: 100%;
-    color: #eb01a5;
     text-align: center;
     }
-
-
-
-
-    
-
-    /*   WORKS  */
-    .works-grid {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(4, 1fr);
-        grid-column-gap: 0px;
-        grid-row-gap: 0px;
-        max-width: 100%;
-        max-height: 100%;
-    }
-
-    .card {
-        transition: transform 0.3s, box-shadow 0.3s;
-    }
-    .card:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-    }
-
-    .card {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        cursor: pointer;
-        font-size: 0px;
-    }
-
-    .card-image {
-        max-width: 100%;
-        height: auto;      
-    }
-
-    .card1 { grid-area: 1 / 1 / 2 / 2; }
-    .card2 { grid-area: 1 / 2 / 2 / 3; }
-    .card3 { grid-area: 1 / 3 / 2 / 4; }
-    .card4 { grid-area: 2 / 1 / 3 / 2; }
-    .card5 { grid-area: 2 / 2 / 3 / 3; }
-    .card6 { grid-area: 2 / 3 / 3 / 4; }
-    .card7 { grid-area: 3 / 1 / 4 / 2; }
-    .card8 { grid-area: 3 / 2 / 4 / 3; }
-    .card9 { grid-area: 3 / 3 / 4 / 4; }
-
-
-
-
 
 /***********************************************/
 /**********   HOMEPAGE (index.html)   **********/
@@ -246,12 +203,8 @@
 /***********   SKILLS (skills.html)   **********/
 /***********************************************/
 
-.skills__subtitle {
-    font-size: 18px;
-    font-weight: 300;
-    border-bottom: 1px solid;
-    border-color: var(--bs-gray);
-    margin-bottom: 24px;
+.skills__first-column, .skills__second-column, .skills__third-column {
+    padding-bottom: 24px;
 }
 
 .skills__item-text {
@@ -304,11 +257,22 @@
     justify-content:center;
     max-width: 100vw;
     align-items: center;
+    padding-bottom: 20px;
 }
 
 .contact__text {
     font-size: 15px;
     line-height: 22px;
+}
+
+.contact__links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.contact__links-divider {
+    padding: 0px 10px 0px 10px;
 }
 
 .contact__icons {
@@ -325,6 +289,9 @@
     margin-top: 24px;
 }
 
+.contact__list-item {
+    padding-bottom: 8px;
+}
 
 
 
@@ -345,6 +312,10 @@
 /***********************************************/
 /************   WORKS (works.html)   ***********/
 /***********************************************/
+
+.works__grid {
+    padding-bottom: 24px;
+}
 
 .works__card {
     display: flex;

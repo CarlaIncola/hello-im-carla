@@ -14,44 +14,42 @@
 <body id="body" class="bg-light">
 
     <!-- NAV BAR -->
-    <header class="header" id="header">
-        <nav class="header__nav bg-light">
-            <ul class="header__menu">
-                <li class="header__menu-item"><a class="header__link" href="../index.html">Home</a></li>
-                <li class="header__menu-item"><a class="header__link" href="works.html">Works</a></li>
-                <li class="header__menu-item"><a class="header__link" href="about.html">About</a></li>
-                <li class="header__menu-item"><a class="header__link" href="skills.html">Skills</a></li>
-                <li class="header__menu-item"><a class="header__link" href="passions.html">Passions</a></li>
-                <li class="header__menu-item"><a class="header__link header__link--active" href="contact.html">Contact</a></li>
+    <header class="header" id="header" role="banner">
+        <nav class="header__nav bg-light" aria-label="Main navigation">
+            <ul class="header__menu" role="menubar">
+                <li class="header__menu-item" role="none"><a class="header__link" href="../index.html" role="menuitem">Home</a></li>
+                <li class="header__menu-item" role="none"><a class="header__link" href="works.html" role="menuitem">Works</a></li>
+                <li class="header__menu-item" role="none"><a class="header__link" href="about.html" role="menuitem">About</a></li>
+                <li class="header__menu-item" role="none"><a class="header__link" href="skills.html" role="menuitem">Skills</a></li>
+                <li class="header__menu-item" role="none"><a class="header__link" href="passions.html" role="menuitem">Passions</a></li>
+                <li class="header__menu-item" role="none"><a class="header__link header__link--active" role="menuitem" href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <!-- MAIN CONTENT -->
-    <main id="main">
-        <section class="contact">
+    <main id="main" role="main">
+        <section class="contact" aria-labelledby="contact-title">
             <div class="contact__grid">
 
                 <!-- SECTION SUBTITLE -->
-                <h3 class="page__title">Mi <span class="bold-text">contacto</span></h3>
+                <h3 class="page__title">Trabajemos <span class="bold-text">juntos</span></h3>
                 
                 <div class="container contact__grid-container">
                     <!-- Mobile: Vertical Stack (default) -->
                     <!-- Desktop: Two Columns (md breakpoint) -->
-                    <div class="row contact__grid-row">
+                    <div class="row contact__grid-row align-items-center">
                         
                         <!-- LEFT COLUMN (Subtitle + Copy - stacks on mobile) -->
                         <div class="col-12 col-md-6 contact__grid-left-column">
                             <div class="quote mb-3 p-3 bg-light rounded">
                                 <div class="contact__text">
-                                    <h4 class="contact__subheadline">Charlemos!</h4>
                                     <p class="contact__text">Diseño con código, y programo con diseño — creando productos digitales coherentes, accesibles y visualmente impactantes desde mi doble rol.</p>
-                                </div>
-                                <div class="contact__icons">
-                                    <a href="https://www.linkedin.com/in/carla-incola/" target="_blank"><img class="contact__icon" src="../icons/icon--linkedin.png" alt="Linkedin icon" /></a>
-                                    <p>Conectemos en Linkedin</p>
-                                    <a href="mailto:caluincola@gmail.com"><img class="contact__icon" src="../icons/icon--email.png" alt="Email icon"/></a><p>Enviame un Email</p>
-                                    <img class="contact__icon" src="../icons/icon--phone.png" alt="Phone icon" /><p>+54 9 11 33198335</p>
+                                    <div class="contact__links">
+                                        <a href="https://www.linkedin.com/in/carla-incola/" aria-label="Connect with me on LinkedIn">LinkedIn</a>
+                                        <span class="contact__links-divider" aria-hidden="true">|</span>
+                                        <a href="mailto:caluincola@gmail.com" aria-label="Email Carla Íncola">Email</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -62,8 +60,7 @@
                                 <div class="mb-0">
                                     <div class="contact__text">
                                         <p class="contact__text">
-                                            <span class="emoji" aria-label="sparkles">✨</span>
-                                            <strong>¿Por qué trabajar conmigo?</strong>
+                                            <h3 class="page__subtitle">¿Por qué trabajar conmigo?</h3>
                                         </p>
                                             <ul class="contact__list">
                                                 <li class="contact__list-item"><strong>Perfil híbrido auténtico:</strong> Me siento igualmente cómoda en puestos de diseño digital (UX/UI) y desarrollo frontend, sin silos entre disciplinas. Figma + Adobe Suite + HTML/CSS/JS = productos digitales coherentes y escalables.</li>
@@ -72,15 +69,14 @@
                                                 <li class="contact__list-item"><strong>Onboarding & mentorship:</strong> He capacitado a equipos nuevos en SDL (CMS), reduciendo su curva de aprendizaje en un 40%.</li>
                                             </ul>
                                         <p class="contact__text">
-                                            <span class="emoji" aria-label="rocket">🚀</span>
-                                            <strong>¿Qué aporto a tu equipo?</strong>
+                                            <h3 class="page__subtitle">¿Qué aporto a tu equipo?</h3>
                                         </p>
-                                            <ul class="contact__list">
-                                                <li class="contact__list-item"><strong>Unificación de disciplinas:</strong> Traduzco diseños a código funcional sin perder fidelidad, eliminando cuellos de botella.</li>
-                                                <li class="contact__list-item"><strong>Metodologías ágiles:</strong> Experiencia en entornos dinámicos con sprints ajustados.</li>
-                                                <li class="contact__list-item"><strong>Enfoque en escalabilidad:</strong> Componentes reutilizables y documentados para equipos técnicos.</li>
-                                                <li class="contact__list-item"><strong>Documentación que habla claro:</strong> Guías paso a paso para equipos cross-functional.</li>
-                                                <li class="contact__list-item"><strong>Adaptabilidad probada:</strong> Igualmente productiva en equipos multidisciplinarios y en roles individuales.</li>
+                                            <ul class="contact__list" role="list">
+                                                <li class="contact__list-item" role="listitem"><strong>Unificación de disciplinas:</strong> Traduzco diseños a código funcional sin perder fidelidad, eliminando cuellos de botella.</li>
+                                                <li class="contact__list-item" role="listitem"><strong>Metodologías ágiles:</strong> Experiencia en entornos dinámicos con sprints ajustados.</li>
+                                                <li class="contact__list-item" role="listitem"><strong>Enfoque en escalabilidad:</strong> Componentes reutilizables y documentados para equipos técnicos.</li>
+                                                <li class="contact__list-item" role="listitem"><strong>Documentación que habla claro:</strong> Guías paso a paso para equipos cross-functional.</li>
+                                                <li class="contact__list-item" role="listitem"><strong>Adaptabilidad probada:</strong> Igualmente productiva en equipos multidisciplinarios y en roles individuales.</li>
                                             </ul>
                                     </div>
                                 </div>
@@ -92,7 +88,7 @@
         </section>
     </main>
     <!-- FOOTER -->
-    <footer id="footer" class="footer bg-light">
+    <footer id="footer" class="footer bg-light" role="contentinfo">
         <p class="footer__text">© 2025. Carla Íncola.</p>
     </footer>
 
