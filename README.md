@@ -1,7 +1,6 @@
 # 👋 Carla Incola | Diseñadora UI/UX & Desarrolladora Frontend Accesible
 
 [![Portfolio](https://img.shields.io/badge/🎨_Portfolio-8A2BE2?style=for-the-badge&logo=vercel&logoColor=white "Ver mi portfolio de diseño y desarrollo")](https://carlaincola.github.io/hello-im-carla)
-[![Dribbble](https://img.shields.io/badge/✨_Dribbble-EA4C89?style=for-the-badge&logo=dribbble "Mis diseños en Dribbble")](https://dribbble.com/tu_usuario)
 [![LinkedIn](https://img.shields.io/badge/💼_LinkedIn-0077B5?style=for-the-badge&logo=linkedin "Mi perfil profesional")](https://www.linkedin.com/in/carla-incola)
 
 ## ♿ Proceso de Diseño Inclusivo
@@ -14,7 +13,7 @@
      </p>
    - Entrevistas con usuarios con diversidad funcional
 
-### 2. **Diseño UI/UX Accesible**
+### 2. **Diseño UX/UI Accesible**
    - Wireframes con:
      - Contraste AA+ (ratio 4.5:1 mínimo)
      - Jerarquía visual clara (tipografía escalable)
