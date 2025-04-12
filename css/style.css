@@ -102,6 +102,19 @@
     font-weight: 600;
 }
 
+@media (max-width: 768px) {
+    .header__nav {
+        justify-content: space-around;
+        padding-right: 0px;
+    }
+    .header__menu {
+        max-width: 100%;
+    }
+    .header__menu-item {
+        padding: 8px;
+    }
+}
+
 /*********************************/
 /**********   FOOTER   **********/
 /*********************************/
@@ -109,10 +122,10 @@
 .footer {
     display: flex;
     position: fixed;
-    bottom: 0;
     flex-direction: column;
-    width: 100%;
     text-align: center;
+    bottom: 0;
+    width: 100%;
     }
 
 /***********************************************/
@@ -182,7 +195,6 @@
 .works__card-overlay:hover {
     .works__card-text    {
         color:var(--bs-white);
-        /*transform: translateY(100%);*/
         position: absolute;
         bottom: 0;
         opacity: 1;
@@ -471,20 +483,3 @@
 .contact__list-item {
     padding-bottom: 8px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
