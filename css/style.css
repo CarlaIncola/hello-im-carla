@@ -129,29 +129,71 @@
     }
 
 /***********************************************/
-/**********   HOMEPAGE (index.html)   **********/
+/************   ABOUT (about.html)   ***********/
 /***********************************************/
 
-.homepage__grid {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100vh;
-}
-
-.homepage__title {
-    font-weight: 200;
-    font-size: 80px;
-    text-align: center;
-    margin-bottom: 0%;
-}
-
-.homepage__subtitle {
+.about__subtitle {
     font-weight: 400;
     font-size: 12px;
     text-align: center;
+}
+
+.about__grid-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    max-width: 100vw;
+    align-items: center;
+}
+
+.about__quote-icon {
+    color: var(--bs-tomato);
+    font-size: 24px;
+    
+}
+
+.about__quote {
+    font-size: 32px;
+    line-height: 32px;
+    font-weight: 800;
+    max-width: 100%;
+    margin-top: 2px;
+}
+
+.about__quote-author {
+    font-size: 16px;
+    line-height: 22px;
+    margin-top: 0px;
+}
+
+.about__subheadline {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+    margin-bottom: 24px;
+}
+
+.about__text {
+    font-size: 15px;
+    line-height: 22px;
+}
+
+.about__button {
+    text-align: center;
+    background-color: #fff;
+    border: 2px solid;
+    border-color: var(--bs-black);
+    text-decoration: none;
+    border-radius: 30px;
+    padding: 7px 13px;
+    width: 160px;
+}
+
+.about__button-text {
+    text-decoration: none;
+    color: #232323;
+    font-weight: 600;
+    font-size: 12px;
 }
 
 /***********************************************/
@@ -326,68 +368,6 @@
                     rgba(0, 0, 0, 1)
                 ), 
                 url('../images/works/reconquista/reconquista--card-back.jpg');
-}
-
-/***********************************************/
-/************   ABOUT (about.html)   ***********/
-/***********************************************/
-
-.about__grid-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    max-width: 100vw;
-    align-items: center;
-}
-
-.about__quote-icon {
-    color: var(--bs-tomato);
-    font-size: 24px;
-    
-}
-
-.about__quote {
-    font-size: 32px;
-    line-height: 32px;
-    font-weight: 800;
-    max-width: 100%;
-    margin-top: 2px;
-}
-
-.about__quote-author {
-    font-size: 16px;
-    line-height: 22px;
-    margin-top: 0px;
-}
-
-.about__subheadline {
-    font-size: 18px;
-    line-height: 24px;
-    font-weight: 400;
-    margin-bottom: 24px;
-}
-
-.about__text {
-    font-size: 15px;
-    line-height: 22px;
-}
-
-.about__button {
-    text-align: center;
-    background-color: #fff;
-    border: 2px solid;
-    border-color: var(--bs-black);
-    text-decoration: none;
-    border-radius: 30px;
-    padding: 7px 13px;
-    width: 160px;
-}
-
-.about__button-text {
-    text-decoration: none;
-    color: #232323;
-    font-weight: 600;
-    font-size: 12px;
 }
 
 /***********************************************/
