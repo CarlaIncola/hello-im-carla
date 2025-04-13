@@ -24,7 +24,7 @@
                 <li class="header__menu-item" role="none"><a class="header__link" href="works.html" role="menuitem" tabindex="0">Works</a></li>
                 <li class="header__menu-item" role="none"><a class="header__link" href="skills.html" role="menuitem" tabindex="0">Skills</a></li>
                 <li class="header__menu-item" role="none"><a class="header__link" href="passions.html" role="menuitem" tabindex="0">Passions</a></li>
-                <li class="header__menu-item" role="none"><a class="header__link header__link--active" href="contact.html" role="menuitem" tabindex="0">Contact</a></li>
+                <li class="header__menu-item" role="none"><a class="header__link header__link--active" href="contact.html" role="menuitem" tabindex="0" aria-current="page">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -43,23 +43,23 @@
                     <div class="row contact__grid-row align-items-top">
                         
                         <!-- LEFT COLUMN (Subtitle + Copy - stacks on mobile) -->
-                        <div class="col-12 col-md-6 contact__grid-left-column">
+                        <div class="col-12 col-md-6 contact__grid-left-column" role="complementary">
                             <div class="quote mb-3 p-3 bg-light rounded">
                                 <div class="contact__text">
                                     <p class="contact__text">Diseño con código, y programo con diseño — creando productos digitales coherentes, accesibles y visualmente impactantes desde mi doble rol.</p>
                                     <div class="contact__links">
-                                        <a href="https://www.linkedin.com/in/carla-incola/" aria-label="Connect with me on LinkedIn">LinkedIn</a>
+                                        <a href="https://www.linkedin.com/in/carla-incola/" aria-label="Connect with me on LinkedIn (opens new window)" rel="noopener">LinkedIn</a>
                                         <span class="contact__links-divider" aria-hidden="true">|</span>
-                                        <a href="mailto:caluincola@gmail.com" aria-label="Email Carla Íncola">Email</a>
+                                        <a href="mailto:caluincola@gmail.com" aria-label="Email Carla Íncola (opens new window)" rel="noopener">Email</a>
                                         <span class="contact__links-divider" aria-hidden="true">|</span>
-                                        <a href="https://github.com/CarlaIncola" aria-label="Take a look at my GitHub">GitHub</a>
+                                        <a href="https://github.com/CarlaIncola" aria-label="Take a look at my GitHub (opens new window)" rel="noopener">GitHub</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         
                         <!-- RIGHT COLUMN (Icons + Links - appears last on mobile) -->
-                        <div class="col-12 col-md-6 contact__grid-right-column">
+                        <div class="col-12 col-md-6 contact__grid-right-column" role="region" aria-labelledby="why-work-with-me">
                             <div class="text-field h-100 p-3 bg-light rounded align-items-top">
                                 <div class="mb-0">
                                     <div class="contact__text">
@@ -92,14 +92,14 @@
         </section>
     </main>
     <!-- FOOTER -->
-    <footer id="footer" class="footer bg-light">
-        <ul class="footer__menu">
-            <li class="footer__menu-item"><p class="footer__text">© 2025. Carla Íncola.</p></li>
-            <li class="footer__menu-item"><span aria-hidden="true">|</span></li>
-            <li class="footer__menu-item"><a class="footer__link" target="_blank" href="https://www.linkedin.com/in/carla-incola/" aria-label="Connect with me on LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a></li>
-            <li class="footer__menu-item"><a class="footer__link" target="_blank" href="mailto:caluincola@gmail.com" aria-label="Email Carla Íncola"><i class="fa-solid fa-envelope"></i></a></li>
-            <li class="footer__menu-item"><a class="footer__link" target="_blank" href="https://github.com/CarlaIncola" aria-label="Take a look at my GitHub"><i class="fa-brands fa-github"></i></a></li>
-            <li class="footer__menu-item"><a class="footer__link" target="_blank" href="https://www.instagram.com/ccalu/" aria-label="Contact me on Instagram"><i class="fa-brands fa-instagram"></i></a></li>
+    <footer id="footer" class="footer bg-light" role="contentinfo">
+        <ul class="footer__menu" role="list">
+            <li class="footer__menu-item" role="listitem"><p class="footer__text">© 2025. Carla Íncola.</p></li>
+            <li class="footer__menu-item" role="listitem"><span aria-hidden="true">|</span></li>
+            <li class="footer__menu-item" role="listitem"><a class="footer__link" target="_blank" rel="noopener" href="https://www.linkedin.com/in/carla-incola/" aria-label="Connect with me on LinkedIn (Opens new window)"><i class="fa-brands fa-linkedin-in"></i></a></li>
+            <li class="footer__menu-item" role="listitem"><a class="footer__link" rel="noopener" href="mailto:caluincola@gmail.com" aria-label="Email Carla Íncola"><i class="fa-solid fa-envelope" aria-hidden="true"></i></a></li>
+            <li class="footer__menu-item" role="listitem"><a class="footer__link" target="_blank" rel="noopener" href="https://github.com/CarlaIncola  (Opens new window)" aria-label="Take a look at my GitHub"><i class="fa-brands fa-github" aria-hidden="true"></i></a></li>
+            <li class="footer__menu-item" role="listitem"><a class="footer__link" target="_blank" rel="noopener" href="https://www.instagram.com/ccalu/  (Opens new window)" aria-label="Contact me on Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a></li>
         </ul>
     </footer>
 
