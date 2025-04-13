@@ -207,9 +207,9 @@
     .about__grid-left-column {
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        max-height: 100%;
     }
-    
+
     .about__image-placeholder {
         display: flex;
         flex-direction: column;
