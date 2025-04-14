@@ -622,3 +622,33 @@
 .contact__list-item {
     padding-bottom: 8px;
 }
+
+/***********************************************/
+/********   WORKS SUBPAGES (works/...)   *******/
+/***********************************************/
+
+.works__subpages {
+    padding-bottom: 16px;
+}
+
+.works__button {
+    border: none;
+    background-color: var(--bs-white);
+    padding: 0px;
+}
+
+.works__button-text {
+    color: var(--bs-white);
+    text-decoration: none;
+    font-weight: 600;
+    padding: 8px 40px;
+    background-color: var(--bs-black);
+    border-radius: 30px;
+}
+
+.works__button-text:hover {
+    background-color: var(--bs-white);
+    color: var(--bs-black);
+    transition: all 0.2s ease;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
