@@ -432,6 +432,89 @@
 }
 
 /***********************************************/
+/**************   WORKS SUBPAGES   *************/
+/***********************************************/
+
+.back__nav {
+    display: flex;
+    position: fixed;
+    justify-content: flex-start;
+    align-items: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 0px;
+    z-index: 1000;
+}
+
+.back__menu {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.back__menu-item {
+    padding-left: 20px;
+    font-size: 14px;
+}
+
+.back__link {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--bs-black);
+}
+
+.back__link:hover {
+    color: var(--bs-tomato);
+    transition: all 0.2s ease-out;
+    font-weight: 600;
+}
+
+.work__page-title {
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-decoration-color: tomato;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 10px;
+    font-weight: 700;
+    width: 100%;
+    font-size: 24px;
+}
+
+.works__description {
+    font-size: 14px;
+}
+
+.works__info {
+    color: var(--bs-gray);
+    font-size: 12px;
+    margin-bottom: 0px;
+}
+
+@media (min-width: 768px) {
+    .page__margins {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .works__description {
+        font-size: 16px;
+    }
+
+    .works__info {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .page__margins {
+        padding-left: 180px;
+        padding-right: 180px;
+    }
+}
+
+/***********************************************/
 /***********   SKILLS (skills.html)   **********/
 /***********************************************/
 
@@ -538,70 +621,4 @@
 
 .contact__list-item {
     padding-bottom: 8px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.back__nav {
-    display: flex;
-    position: fixed;
-    justify-content: flex-start;
-    align-items: center;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 20px 0px;
-    z-index: 1000;
-}
-
-.back__menu {
-    list-style-type: none;
-    display: flex;
-    margin: 0;
-    padding: 0;
-}
-
-.back__menu-item {
-    padding-left: 40px;
-    font-size: 14px;
-}
-
-.back__link {
-    text-decoration: none;
-    text-transform: uppercase;
-    color: var(--bs-black);
-}
-
-
-@media (min-width: 768px) {
-    .page__margins {
-        padding-left: 40px;
-        padding-right: 40px;
-    }
-}
-
-@media (min-width: 1200px) {
-    .page__margins {
-        padding-left: 100px;
-        padding-right: 100px;
-    }
 }
