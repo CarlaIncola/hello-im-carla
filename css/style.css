@@ -342,7 +342,7 @@
     align-items: end;
     text-align: center;
     cursor: pointer;
-    opacity: 1; /* Starts smaller and lower */
+    opacity: 1;
     transition: all 0.3s ease-in;
     width: 100%;
     height: 100%;
@@ -358,7 +358,7 @@
 }
 
 
-  /* CARDS BACKGROUNDS ON HOVER */
+/* CARDS BACKGROUNDS ON HOVER */
 #nike:hover {
     background-image: 
                 linear-gradient(
@@ -580,6 +580,10 @@
 /***********************************************/
 /*********   PASSIONS (passions.html)   ********/
 /***********************************************/
+
+.passions__grid {
+    padding-bottom: 40px;
+}
 
 .passions__subtitle {
     font-size: 18px;
