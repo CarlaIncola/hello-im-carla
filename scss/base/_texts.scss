@@ -1,0 +1,55 @@
+@use '../variables' as *;
+@use '../mixins' as *;
+
+// PAGES TITLE
+.page__title {
+    @include page-title;
+
+    .bold-text {
+        font-weight: 600;
+    } 
+}
+
+// PAGES SUBTITLE
+.page__subtitle {
+    @include page-subtitle;
+}
+
+// PAGES FEATURED TEXT
+.page__featured-text {
+    @include featured-text;
+}
+
+// PAGES BODY COPY
+.page__body-copy {
+    @include body-copy;
+}
+
+// CARDS TEXT
+.works__card-text {
+    @include card-text;
+}
+
+// SKILL TEXTS
+.skills__item-name {
+    @include skill-name;
+}
+
+.skills__item-percent {
+    @include skill-percent;
+}
+
+// SUBPAGES TITLE
+.work__page-title {
+    @include subpage-title;
+}
+
+// SUBPAGES TEXT
+.works__subpage--body-copy {
+    @include subpage-body-copy;
+}
+
+// SUBPAGES ADDITIONAL INFORMATION
+.works__subpage--info {
+    @include subpage-info;
+}

@@ -1,0 +1,13 @@
+@use '../variables' as *;
+
+.contact__grid-left-column {
+    
+    .page__featured-text {
+        line-height: 36px;
+    }
+    .contact__links {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+}

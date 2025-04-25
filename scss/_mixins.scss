@@ -1,0 +1,120 @@
+@use 'variables' as *;
+
+// TIPOGRAPHIES
+    // PAGES TITLES
+    @mixin page-title {
+        font-weight: 200;
+        font-size: 24px;
+        text-align: center;
+    }
+    // PAGES SUBTITLES
+    @mixin page-subtitle {
+        font-size: 16px;
+        font-weight: 300;
+        border-bottom: 1px solid;
+        border-color: $color-secondary;
+        padding-bottom: 8px;
+    }
+    // FEATURED TEXTS
+    @mixin featured-text {
+        font-size: 32px;
+        line-height: 32px;
+        font-weight: 800;
+        max-width: 100%;
+        margin-top: 2px;
+        text-transform: uppercase;
+    }
+    // BODY COPY TEXTS
+    @mixin body-copy {
+        font-size: 15px;
+        line-height: 22px;
+    }
+    // SUBPAGES TITLES (works/...)
+    @mixin subpage-title {
+        width: 100%;
+        text-decoration: underline;
+        text-transform: uppercase;
+        text-decoration-color: $color-primary;
+        text-underline-offset: 8px;
+        font-size: 24px;
+        font-weight: 700;
+    }
+    // SUBPAGES BODY COPY (works/...)
+    @mixin subpage-body-copy {
+        font-size: 14px;
+    }
+
+    // SUBPAGES INFORMATION (works/...)
+    @mixin subpage-info {
+        color: $color-secondary;
+        font-size: 12px;
+        margin-bottom: 0px;
+    }
+
+    // CARDS TEXT
+    @mixin card-text {
+        color: $color-light;
+        font-size: 40px;
+        z-index: 2;
+        text-align: center;
+        text-shadow: 0 0 4px rgba(0, 0, 0.5);
+        transition: 0.5s;
+        opacity: 0;
+
+        .works__card-title {
+            font-size: 24px;
+            font-weight:800;
+            margin-bottom: 0px;
+        }
+        
+        .works__card-subtitle {
+            font-style: italic;
+            font-size: 18px;
+            font-weight: 200;
+        }
+    }
+
+    // SKILL BAR TEXTS
+    @mixin skill-name {
+        font-size: 16px;
+        font-weight: 200;
+    }
+
+    @mixin skill-percent {
+        font-size: 16px;
+        text-align: right;
+        font-weight: bold;
+    }
+
+// BUTTONS
+@mixin button-text {
+    text-decoration: none;
+    color: $color-light;
+}
+
+@mixin button {
+    background-color: $color-dark;
+    text-align: center;
+    border: 1px solid;
+    border-color: $color-dark;
+    text-decoration: none;
+    color: $color-light;
+    border-radius: 8px;
+    padding: 8px 24px;
+    font-weight: 600;
+    font-size: 12px;
+    box-shadow: 1px 1px 5px 0px $color-dark;
+    
+    .button__text {
+        @include button-text;
+    }
+
+    &:hover {
+        background-color: $color-light;
+        transition: all 0.2s ease-out;
+
+        .button__text {
+            color: $color-dark;
+        }
+    }
+}

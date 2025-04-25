@@ -1,0 +1,38 @@
+@use '../variables' as *;
+
+.back__nav {
+    display: flex;
+    position: fixed;
+    justify-content: flex-start;
+    align-items: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 0px;
+    z-index: 1000;
+
+    .back__menu {
+        list-style-type: none;
+        display: flex;
+        margin: 0;
+        padding: 0;
+    
+        .back__menu-item {
+            padding-left: 20px;
+            font-size: 14px;
+            font-weight: 600;
+        
+            .back__link {
+                text-decoration: none;
+                text-transform: uppercase;
+                color: $color-dark;
+            
+                &:hover {
+                    color: $color-primary;
+                    transition: all 0.2s ease-out;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+}
