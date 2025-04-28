@@ -283,8 +283,10 @@ body .main__subpages {
   transition: all 0.4s ease-out;
 }
 
-.contact__grid-right-column .page__subtitle {
-  margin-top: 24px;
+.contact__grid-right-column .margin_top {
+  padding-top: 12px;
+}
+.contact__grid-right-column .contact__list-item {
   margin-bottom: 12px;
 }
 

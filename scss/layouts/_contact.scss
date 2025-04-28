@@ -23,8 +23,11 @@
 }
 
 .contact__grid-right-column {
-    .page__subtitle {
-        margin-top: 24px;
+    .margin_top {
+        padding-top: 12px;
+    }
+    
+    .contact__list-item {
         margin-bottom: 12px;
     }
 }
