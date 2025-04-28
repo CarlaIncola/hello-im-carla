@@ -1,5 +1,6 @@
 @use '../variables' as *;
 
+// MOBILE FIRST
 .contact__grid-left-column {
     
     .page__featured-text {
@@ -9,5 +10,30 @@
         display: flex;
         justify-content: center;
         gap: 10px;
+
+        .contact__links-item {
+            color: $color-primary;
+
+            &:hover{
+                color: $color-dark;
+                transition: all 0.4s ease-out;
+            }
+        }
+    }
+}
+
+.contact__grid-right-column {
+    .page__subtitle {
+        margin-top: 24px;
+        margin-bottom: 12px;
+    }
+}
+
+// TABLET / DESKTOP
+@media (min-width: 768px) {
+    .contact__grid-right-column {
+        .page__subtitle {
+            margin-top: 0px;
+        }
     }
 }

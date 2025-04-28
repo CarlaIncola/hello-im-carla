@@ -264,6 +264,7 @@ body .main__subpages {
   }
   .header__nav .header__menu .header__menu-item {
     padding: 0px 40px 0px 0px;
+    font-size: 14px;
   }
 }
 .contact__grid-left-column .page__featured-text {
@@ -274,7 +275,24 @@ body .main__subpages {
   justify-content: center;
   gap: 10px;
 }
+.contact__grid-left-column .contact__links .contact__links-item {
+  color: #ff3647;
+}
+.contact__grid-left-column .contact__links .contact__links-item:hover {
+  color: #232323;
+  transition: all 0.4s ease-out;
+}
 
+.contact__grid-right-column .page__subtitle {
+  margin-top: 24px;
+  margin-bottom: 12px;
+}
+
+@media (min-width: 768px) {
+  .contact__grid-right-column .page__subtitle {
+    margin-top: 0px;
+  }
+}
 .about__grid-container {
   display: flex;
   flex-direction: column;
