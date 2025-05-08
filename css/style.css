@@ -351,22 +351,26 @@ body .main__subpages {
   }
 }
 @media (min-width: 768px) {
-  .subpage__margins {
+  .main__subpages .subpage__margins {
+    background-color: red;
     padding: 0px 50px 0px 50px;
   }
-  .subpage__margins .works__subpage--body-copy {
+  .main__subpages .subpage__margins .works__subpage--body-copy {
     font-size: 16px;
   }
-  .subpage__margins .works__subpage--info {
+  .main__subpages .subpage__margins .works__subpage--info {
     font-size: 14px;
   }
 }
 @media (min-width: 1200px) {
-  .works__subpages {
+  .main__subpages {
+    max-width: 1000px;
+  }
+  .main__subpages .works__subpages {
     margin-top: 40px;
     padding-bottom: 16px;
   }
-  .works__subpages .subpage__margins {
+  .main__subpages .works__subpages .subpage__margins {
     padding: 0px 180px 0px 180px;
   }
 }

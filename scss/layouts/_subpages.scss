@@ -1,26 +1,35 @@
+@use '../variables' as *;
+
 // TABLET 
 @media (min-width: 768px) {
-    .subpage__margins {
-        padding: 0px 50px 0px 50px;
-
-        .works__subpage--body-copy {
-            font-size: 16px;
-        }
-
-        .works__subpage--info {
-            font-size: 14px;
+    .main__subpages {
+        .subpage__margins {
+            background-color: red;
+            padding: 0px 50px 0px 50px;
+    
+            .works__subpage--body-copy {
+                font-size: 16px;
+            }
+    
+            .works__subpage--info {
+                font-size: 14px;
+            }
         }
     }
 }
 
 // DESKTOP
 @media (min-width: 1200px) {
-    .works__subpages {
-        margin-top: 40px;
-        padding-bottom: 16px;
-
-        .subpage__margins {
-            padding: 0px 180px 0px 180px;
+    .main__subpages {
+        max-width: 1000px;
+        
+        .works__subpages {
+            margin-top: 40px;
+            padding-bottom: 16px;
+    
+            .subpage__margins {
+                padding: 0px 180px 0px 180px;
+            }
         }
     }
 }
