@@ -95,7 +95,7 @@ body .main__subpages {
 
 .works__subpage--info {
   color: #898989;
-  font-size: 12px;
+  font-size: 10px;
   margin-bottom: 0px;
 }
 
@@ -352,7 +352,6 @@ body .main__subpages {
 }
 @media (min-width: 768px) {
   .main__subpages .subpage__margins {
-    background-color: red;
     padding: 0px 50px 0px 50px;
   }
   .main__subpages .subpage__margins .works__subpage--body-copy {
@@ -363,9 +362,6 @@ body .main__subpages {
   }
 }
 @media (min-width: 1200px) {
-  .main__subpages {
-    max-width: 1000px;
-  }
   .main__subpages .works__subpages {
     margin-top: 40px;
     padding-bottom: 16px;

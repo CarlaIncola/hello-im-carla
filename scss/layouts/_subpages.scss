@@ -4,7 +4,6 @@
 @media (min-width: 768px) {
     .main__subpages {
         .subpage__margins {
-            background-color: red;
             padding: 0px 50px 0px 50px;
     
             .works__subpage--body-copy {
@@ -21,7 +20,6 @@
 // DESKTOP
 @media (min-width: 1200px) {
     .main__subpages {
-        max-width: 1000px;
         
         .works__subpages {
             margin-top: 40px;
