@@ -117,11 +117,11 @@ body .main__subpages {
   color: #f8f9fa;
 }
 .button:hover {
-  background-color: #f8f9fa;
+  background-color: #c60053;
   transition: all 0.2s ease-out;
 }
 .button:hover .button__text {
-  color: #232323;
+  color: #f8f9fa;
 }
 
 .works__card-overlay .works__card {

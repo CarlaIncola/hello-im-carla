@@ -110,11 +110,11 @@
     }
 
     &:hover {
-        background-color: $color-light;
+        background-color: $color-primary;
         transition: all 0.2s ease-out;
 
         .button__text {
-            color: $color-dark;
+            color: $color-light;
         }
     }
 }
