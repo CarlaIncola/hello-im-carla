@@ -5,8 +5,28 @@
 
         .skills__grid-row {
 
-            .skills__first-column, .skills__second-column, .skills__third-column {
-            
+            .skills__second-column, .skills__third-column {
+                
+                .margin_top {
+                    padding-top: 12px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .skills {
+        .skills__grid-container {
+    
+            .skills__grid-row {
+    
+                .skills__second-column, .skills__third-column {
+                    
+                    .margin_top {
+                        padding-top: 0px;
+                    }
+                }
             }
         }
     }

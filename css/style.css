@@ -118,6 +118,8 @@ body .main__subpages {
 }
 .button:hover {
   background-color: #c60053;
+  border-color: #c60053;
+  box-shadow: 1px 1px 5px 0px #898989;
   transition: all 0.2s ease-out;
 }
 .button:hover .button__text {
@@ -400,6 +402,16 @@ body .main__subpages {
 }
 .footer__nav .footer__menu .footer__menu-item .footer__link {
   color: #232323;
+}
+
+.skills .skills__grid-container .skills__grid-row .skills__second-column .margin_top, .skills .skills__grid-container .skills__grid-row .skills__third-column .margin_top {
+  padding-top: 12px;
+}
+
+@media (min-width: 768px) {
+  .skills .skills__grid-container .skills__grid-row .skills__second-column .margin_top, .skills .skills__grid-container .skills__grid-row .skills__third-column .margin_top {
+    padding-top: 0px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
