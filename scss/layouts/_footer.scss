@@ -31,6 +31,11 @@
 
             .footer__link {
                 color: $color-dark;
+
+                &:hover {
+                    color: $color-primary;
+                    transition: all 0.2s ease-out;
+                }
             }
         }
     }

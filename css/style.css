@@ -403,6 +403,10 @@ body .main__subpages {
 .footer__nav .footer__menu .footer__menu-item .footer__link {
   color: #232323;
 }
+.footer__nav .footer__menu .footer__menu-item .footer__link:hover {
+  color: #c60053;
+  transition: all 0.2s ease-out;
+}
 
 .skills .skills__grid-container .skills__grid-row .skills__second-column .margin_top, .skills .skills__grid-container .skills__grid-row .skills__third-column .margin_top {
   padding-top: 12px;
