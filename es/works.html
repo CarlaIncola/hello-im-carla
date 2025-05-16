@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio de Carla Íncola: Diseño UX/UI, desarrollo front-end e identidad de marca. Proyectos estratégicos con impacto visual y funcional.">
+    <meta name="keywords" content="Portafolio, Trabajos, Experiencia, Diseño UX/UI, Diseño digital, Diseño web, accesibilidad">
+    <meta name="robots" content="index, follow">
+    <!-- STYLE.CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+    <title>My works  |  Carla Íncola - Hybrid Designer & Developer</title>
+
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">        <link href="<https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css>" rel="stylesheet">
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body id="body" class="bg-light">
+
+    <!-- NAV BAR -->
+    <header class="header" id="header" role="banner">
+        <nav class="header__nav" aria-label="Main navigation">
+            <ul class="header__menu" role="menubar">
+                <li class="header__menu-item" role="none"><a class="header__link" href="about.html" role="menuitem" tabindex="0">Sobre mi</a></li>
+                <li class="header__menu-item" role="none"><a class="header__link header__link--active" href="works.html" role="menuitem" tabindex="0" aria-current="page">Trabajos</a></li>
+                <li class="header__menu-item" role="none"><a class="header__link" href="skills.html" role="menuitem" tabindex="0">Habilidades</a></li>
+                <li class="header__menu-item" role="none"><a class="header__link" href="passions.html" role="menuitem" tabindex="0">Pasiones</a></li>
+                <li class="header__menu-item" role="none"><a class="header__link" role="menuitem" href="contact.html" tabindex="0">Contacto</a></li>
+                <li class="header__menu-item" role="listitem">
+                    <span aria-hidden="true">|</span>
+                </li>
+                <li class="header__menu-item" role="none">
+                    <a class="header__link header__link--active" href="../en/works.html" role="menuitem" tabindex="0" aria-current="page">English</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main id="main" class="main container-fluid px-3 px-md-4" role="main">
+        <section class="works" aria-labelledby="works-title">
+
+            <!-- PAGE TITLE -->
+            <h3 class="page__title" tabindex="0">Mis <span class="bold-text">trabajos</span></h3>
+            
+            <!-- WORKS GRID -->
+            <div class="row row-cols-1 row-cols-md-3 g-0 works__grid" role="list">
+                
+                <!-- NIKE CARD -->
+                <div class="col" role="listitem">
+                    <div class="works__card-overlay h-100">
+                        <a 
+                        class="works__card card1 h-100" 
+                        href="works/nike.html" 
+                        aria-labelledby="nike-title nike-desc" 
+                        tabindex="0"
+                        >
+                            <figcaption class="works__card-text">
+                                <h5 class="works__card-title">Nike</h5>
+                                <p class="works__card-subtitle">Email Marketing</p>
+                            </figcaption>
+                            <div class="works__card-background" id="nike">
+                                <img class="works__card-image img-fluid" 
+                                    src="../assets/images/works/nike/nike---card-front.webp" 
+                                    alt="A Nike shoe in front of text indicating a release on June, 24.">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- FUTUROCK CARD -->
+                <div class="col" role="listitem">
+                    <div class="works__card-overlay h-100">
+                        <a 
+                        class="works__card card1 h-100" 
+                        href="works/futurock.html"
+                        aria-labelledby="futurock-title futurock-desc" 
+                        tabindex="0"
+                        >
+                            <figcaption class="works__card-text">
+                                <h5 class="works__card-title">Futuröck</h5>
+                                <p class="works__card-subtitle">Digital Display</p>
+                            </figcaption>
+                            <div class="works__card-background" id="futurock">
+                                <img class="works__card-image img-fluid" 
+                                    src="../assets/images/works/futurock/futurock---card-front.webp" 
+                                    alt="Futurock logo in black on a green background">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- TRANQUI CARD -->
+                <div class="col" role="listitem">
+                    <div class="works__card-overlay h-100">
+                        <a 
+                        class="works__card card1 h-100" 
+                        href="works/tranqui.html"
+                        aria-labelledby="tranqui-title tranqui-desc" 
+                        tabindex="0"
+                        >
+                            <figcaption class="works__card-text">
+                                <h5 class="works__card-title">Tranqui</h5>
+                                <p class="works__card-subtitle">UX/UI Design</p>
+                            </figcaption>
+                            <div class="works__card-background" id="tranqui">
+                                <img class="works__card-image img-fluid" 
+                                    src="../assets/images/works/tranqui/tranqui---card-front.webp" 
+                                    alt="The logo of the app. An alien shaped face blinking and eye">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- VALESKA CARD -->
+                <div class="col" role="listitem">
+                    <div class="works__card-overlay h-100">
+                        <a 
+                        class="works__card card1 h-100" 
+                        href="works/valeska.html"
+                        aria-labelledby="valeska-title valeska-desc" 
+                        tabindex="0"
+                        >
+                            <figcaption class="works__card-text">
+                                <h5 class="works__card-title">Valeska</h5>
+                                <p class="works__card-subtitle">Brand Identity</p>
+                            </figcaption>
+                            <div class="works__card-background" id="valeska">
+                                <img class="works__card-image img-fluid" 
+                                    src="../assets/images/works/valeska/valeska--card-front.webp" 
+                                    alt="An image of a woman wearing an orange coat with the brand's logo">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- REACT CALCULATOR CARD -->
+                <div class="col" role="listitem">
+                    <div class="works__card-overlay h-100">
+                        <a 
+                        class="works__card card1 h-100" 
+                        href="works/calculator.html"
+                        aria-labelledby="calculator-title calculator-desc" 
+                        tabindex="0"
+                        >
+                            <figcaption class="works__card-text">
+                                <h5 class="works__card-title">React calculator</h5>
+                                <p class="works__card-subtitle">Front-end & Design</p>
+                            </figcaption>
+                            <div class="works__card-background" id="calculator">
+                                <img class="works__card-image img-fluid" 
+                                    src="../assets/images/works/calculator/calculator--card-front.webp" 
+                                    alt="Image of the calculator displaying on multiple devices">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- QUOTE MACHINE CARD -->
+                <div class="col" role="listitem">
+                    <div class="works__card-overlay h-100">
+                        <a 
+                        class="works__card card1 h-100" 
+                        href="works/quotemachine.html"
+                        aria-labelledby="quotemachine-title quotemachine-desc" 
+                        tabindex="0"
+                        >
+                            <figcaption class="works__card-text">
+                                <h5 class="works__card-title">Quote machine</h5>
+                                <p class="works__card-subtitle">Front-end & Design</p>
+                            </figcaption>
+                            <div class="works__card-background" id="quote-machine">
+                                <img class="works__card-image img-fluid" 
+                                    src="../assets/images/works/quote-machine/quote-machine--card-front.webp" 
+                                    alt="Two hands holding a phone displaying the quote machine app">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- CAKE'S BAR CARD -->
+                <div class="col">
+                    <div class="works__card-overlay h-100">
+                        <a 
+                        class="works__card card1 h-100" 
+                        href="works/cakesbar.html"
+                        aria-labelledby="cakesbar-title cakesbar-desc" 
+                        tabindex="0"
+                        >
+                            <figcaption class="works__card-text">
+                                <h5 class="works__card-title">Cake's Bar</h5>
+                                <p class="works__card-subtitle">Product & web design</p>
+                            </figcaption>
+                            <div class="works__card-background" id="cakes-bar">
+                                <img class="works__card-image img-fluid" 
+                                    src="../assets/images/works/cakes-bar/cakes-bar--card-front.webp" 
+                                    alt="Two hands holding a paper bag printed with the brand's pattern">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- RECONQUISTA CARD -->
+                <div class="col">
+                    <div class="works__card-overlay h-100">
+                        <a 
+                        class="works__card card1 h-100" 
+                        href="works/reconquista.html"
+                        aria-labelledby="reconquista-title reconquista-desc" 
+                        tabindex="0"
+                        >
+                            <figcaption class="works__card-text">
+                                <h5 class="works__card-title">Reconquista</h5>
+                                <p class="works__card-subtitle">Cover design</p>
+                            </figcaption>
+                            <div class="works__card-background" id="reconquista">
+                                <img class="works__card-image img-fluid" 
+                                    src="../assets/images/works/reconquista/reconquista--card-front.webp" 
+                                    alt="A book in front of a pile of book. The cover is a blue rose splattered with blood, with the title in yellow.">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- FOOTER -->
+    <footer id="footer" class="footer__nav bg-light" role="contentinfo">
+        <ul class="footer__menu" role="list">
+            <li class="footer__menu-item" role="listitem"><p class="footer__text" tabindex="0">© 2025. Carla Íncola.</p></li>
+            <li class="footer__menu-item" role="listitem"><span aria-hidden="true">|</span></li>
+            <li class="footer__menu-item" role="listitem"><a tabindex="0" class="footer__link" target="_blank" rel="noopener" href="https://www.linkedin.com/in/carla-incola/" aria-label="Connect with me on LinkedIn (Opens new window)"><i class="fa-brands fa-linkedin-in"></i></a></li>
+            <li class="footer__menu-item" role="listitem"><a tabindex="0" class="footer__link" rel="noopener" href="mailto:caluincola@gmail.com" aria-label="Email Carla Íncola"><i class="fa-solid fa-envelope" aria-hidden="true"></i></a></li>
+            <li class="footer__menu-item" role="listitem"><a tabindex="0" class="footer__link" target="_blank" rel="noopener" href="https://github.com/CarlaIncola" aria-label="Take a look at my GitHub (Opens new window)"><i class="fa-brands fa-github" aria-hidden="true"></i></a></li>
+            <li class="footer__menu-item" role="listitem"><a tabindex="0" class="footer__link" target="_blank" rel="noopener" href="https://www.instagram.com/ccalu/" aria-label="Contact me on Instagram (Opens new window)"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a></li>
+        </ul>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

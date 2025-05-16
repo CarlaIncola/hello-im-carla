@@ -1,6 +1,13 @@
 @use 'variables' as *;
 
 // TIPOGRAPHIES
+
+    // MAIN TITLE (index)
+    @mixin index-title {
+        font-size: 40px;
+        font-weight: 700;
+    }
+
     // PAGES TITLES
     @mixin page-title {
         font-weight: 200;
@@ -119,4 +126,8 @@
             color: $color-light;
         }
     }
+}
+
+@mixin lang-button {
+    background-color: $color-primary;
 }

@@ -1,0 +1,36 @@
+@use '../variables' as *;
+@use '../mixins' as *;
+
+.index__container {
+    /* Contenedor relativo para posicionar elementos */
+    position: relative;
+    overflow: hidden; /* Oculta elementos durante la animación */
+}
+
+/* Estilos compartidos para elementos animados */
+.index__title, .index__link {
+    opacity: 0;
+    transform: translateX(-50px); /* Inicia fuera de pantalla (izquierda) */
+    animation: slideIn 1s ease-out forwards;
+}
+
+/* Animación personalizada */
+@keyframes slideIn {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Retrasos secuenciales */
+.index__title {
+    animation-delay: 0.3s; /* Primero (nombre) */
+}
+
+.index__link:nth-of-type(1) { /* English */
+    animation-delay: 1.3s; /* +1s después del nombre */
+}
+
+.index__link:nth-of-type(2) { /* Español */
+    animation-delay: 2.3s; /* +1s después de English */
+}
