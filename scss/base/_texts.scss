@@ -1,6 +1,11 @@
 @use '../variables' as *;
 @use '../mixins' as *;
 
+// MAIN TITLE (index)
+.index__title {
+    @include index-title;
+}
+
 // PAGES TITLE
 .page__title {
     @include page-title;

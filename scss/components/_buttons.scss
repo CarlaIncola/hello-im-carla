@@ -4,3 +4,7 @@
 .button {
     @include button;
 }
+
+.header__menu-button {
+    @include lang-button;
+}
