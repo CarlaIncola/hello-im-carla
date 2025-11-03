@@ -456,6 +456,8 @@ body .main__subpages {
 }
 
 .page__body-copy {
+  margin-left: 20px;
+  margin-right: 20px;
   flex-wrap: wrap;
 }
 
