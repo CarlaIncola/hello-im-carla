@@ -467,7 +467,7 @@ body .main__subpages {
 }
 .home__clients-wrapper .marquee {
   display: block;
-  width: 400px;
+  width: 300px;
   outline: none;
 }
 .home__clients-wrapper .marquee .marquee__track {
