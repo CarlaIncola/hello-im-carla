@@ -9,8 +9,7 @@
     <!-- STYLE.CSS -->
     <link rel="stylesheet" href="../css/style.css">
     <title>My works  |  Carla Íncola - Hybrid Designer & Developer</title>
-
-    <!-- BOOTSTRAP -->
+    
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">        <link href="<https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css>" rel="stylesheet">
 
     <!-- FONT AWESOME -->
@@ -21,21 +20,22 @@
 
     <!-- NAV BAR -->
     <header class="header" id="header" role="banner">
+        <div class="header__nav-wrapper">
+        <p class="header__brand" tabindex="0">Carla <span style="font-weight: bold;">Íncola</span></p>
+    
         <nav class="header__nav" aria-label="Main navigation">
             <ul class="header__menu" role="menubar">
-                <li class="header__menu-item" role="none"><a class="header__link" href="about.html" role="menuitem" tabindex="0">About</a></li>
-                <li class="header__menu-item" role="none"><a class="header__link header__link--active" href="works.html" role="menuitem" tabindex="0" aria-current="page">Works</a></li>
-                <li class="header__menu-item" role="none"><a class="header__link" href="skills.html" role="menuitem" tabindex="0">Skills</a></li>
-                <li class="header__menu-item" role="none"><a class="header__link" href="passions.html" role="menuitem" tabindex="0">Passions</a></li>
-                <li class="header__menu-item" role="none"><a class="header__link" role="menuitem" href="contact.html" tabindex="0">Contact</a></li>
-                <li class="header__menu-item" role="listitem">
-                    <span aria-hidden="true">|</span>
-                </li>
-                <li class="header__menu-item" role="none">
-                    <a class="header__link header__link--active" href="../es/works.html" role="menuitem" tabindex="0" aria-current="page">Spanish</a>
-                </li>
+            <li class="header__menu-item" role="none">
+                <a class="header__link" href="home.html" role="menuitem" tabindex="0">Home</a>
+            </li>
+            <li class="header__menu-item" role="none"><a class="header__link header__link--active" href="works.html" role="menuitem" tabindex="0" aria-current="page">Works</a></li>
+            <li class="header__menu-item" role="none"><a class="header__link" href="about.html" role="menuitem" tabindex="0">About</a></li>
+            <li class="header__menu-item" role="none"><a class="header__link" role="menuitem" href="contact.html" tabindex="0">Contact</a></li>
+            <li class="header__menu-item" role="listitem"><span aria-hidden="true">|</span></li>
+            <li class="header__menu-item" role="none"><a class="header__link header__link--active" href="../es/works.html" role="menuitem" tabindex="0" aria-current="page">Spanish</a></li>
             </ul>
         </nav>
+        </div>
     </header>
 
     <!-- MAIN CONTENT -->
@@ -43,7 +43,7 @@
         <section class="works" aria-labelledby="works-title">
 
             <!-- PAGE TITLE -->
-            <h3 class="page__title" tabindex="0">My <span class="bold-text">works</span></h3>
+            <h3 class="page__title" tabindex="0">Selected <span class="bold-text">works</span></h3>
             
             <!-- WORKS GRID -->
             <div class="row row-cols-1 row-cols-md-3 g-0 works__grid" role="list">
@@ -57,6 +57,7 @@
                         aria-labelledby="nike-title nike-desc" 
                         tabindex="0"
                         >
+                            <span class="works__card-label">Case Study</span>
                             <figcaption class="works__card-text">
                                 <h5 class="works__card-title">Nike</h5>
                                 <p class="works__card-subtitle">Email Marketing</p>
@@ -65,6 +66,29 @@
                                 <img class="works__card-image img-fluid" 
                                     src="../assets/images/works/nike/nike---card-front.webp" 
                                     alt="A Nike shoe in front of text indicating a release on June, 24.">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- UNITED AIRLINES CARD -->
+                <div class="col" role="listitem">
+                    <div class="works__card-overlay h-100">
+                        <a 
+                        class="works__card card1 h-100" 
+                        href="works/united-airlines.html"
+                        aria-labelledby="united-airlines-title united-airlines-desc" 
+                        tabindex="0"
+                        >
+                        <span class="works__card-label">Agency</span>
+                            <figcaption class="works__card-text">
+                                <h5 class="works__card-title">United Airlines</h5>
+                                <p class="works__card-subtitle">Technical Production</p>
+                            </figcaption>
+                            <div class="works__card-background" id="united-airlines">
+                                <img class="works__card-image img-fluid" 
+                                    src="../assets/images/works/united-airlines/united-airlines--card-front.webp" 
+                                    alt="Image of the United Airlines' logo">
                             </div>
                         </a>
                     </div>
@@ -79,6 +103,7 @@
                         aria-labelledby="futurock-title futurock-desc" 
                         tabindex="0"
                         >
+                            <span class="works__card-label">Freelance</span>
                             <figcaption class="works__card-text">
                                 <h5 class="works__card-title">Futuröck</h5>
                                 <p class="works__card-subtitle">Digital Display</p>
@@ -101,6 +126,7 @@
                         aria-labelledby="tranqui-title tranqui-desc" 
                         tabindex="0"
                         >
+                        <span class="works__card-label">Case Study</span>
                             <figcaption class="works__card-text">
                                 <h5 class="works__card-title">Tranqui</h5>
                                 <p class="works__card-subtitle">UX/UI Design</p>
@@ -123,6 +149,7 @@
                         aria-labelledby="valeska-title valeska-desc" 
                         tabindex="0"
                         >
+                            <span class="works__card-label">freelance</span>
                             <figcaption class="works__card-text">
                                 <h5 class="works__card-title">Valeska</h5>
                                 <p class="works__card-subtitle">Brand Identity</p>
@@ -136,45 +163,24 @@
                     </div>
                 </div>
 
-                <!-- REACT CALCULATOR CARD -->
-                <div class="col" role="listitem">
+                <!-- BEST BUY CARD -->
+                <div class="col">
                     <div class="works__card-overlay h-100">
                         <a 
                         class="works__card card1 h-100" 
-                        href="works/calculator.html"
-                        aria-labelledby="calculator-title calculator-desc" 
+                        href="works/best-buy.html"
+                        aria-labelledby="best-buy-title best-buy-desc" 
                         tabindex="0"
                         >
+                            <span class="works__card-label">Agency</span>
                             <figcaption class="works__card-text">
-                                <h5 class="works__card-title">React calculator</h5>
-                                <p class="works__card-subtitle">Front-end & Design</p>
+                                <h5 class="works__card-title">Best Buy</h5>
+                                <p class="works__card-subtitle">Digital Display</p>
                             </figcaption>
-                            <div class="works__card-background" id="calculator">
+                            <div class="works__card-background" id="best-buy">
                                 <img class="works__card-image img-fluid" 
-                                    src="../assets/images/works/calculator/calculator--card-front.webp" 
-                                    alt="Image of the calculator displaying on multiple devices">
-                            </div>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- QUOTE MACHINE CARD -->
-                <div class="col" role="listitem">
-                    <div class="works__card-overlay h-100">
-                        <a 
-                        class="works__card card1 h-100" 
-                        href="works/quotemachine.html"
-                        aria-labelledby="quotemachine-title quotemachine-desc" 
-                        tabindex="0"
-                        >
-                            <figcaption class="works__card-text">
-                                <h5 class="works__card-title">Quote machine</h5>
-                                <p class="works__card-subtitle">Front-end & Design</p>
-                            </figcaption>
-                            <div class="works__card-background" id="quote-machine">
-                                <img class="works__card-image img-fluid" 
-                                    src="../assets/images/works/quote-machine/quote-machine--card-front.webp" 
-                                    alt="Two hands holding a phone displaying the quote machine app">
+                                    src="../assets/images/works/best-buy/best-buy-card.png" 
+                                    alt="Best Buy logo in front of Best Buy characteristic blue.">
                             </div>
                         </a>
                     </div>
@@ -189,6 +195,7 @@
                         aria-labelledby="cakesbar-title cakesbar-desc" 
                         tabindex="0"
                         >
+                        <span class="works__card-label">Freelance</span>
                             <figcaption class="works__card-text">
                                 <h5 class="works__card-title">Cake's Bar</h5>
                                 <p class="works__card-subtitle">Product & web design</p>
@@ -202,27 +209,29 @@
                     </div>
                 </div>
 
-                <!-- RECONQUISTA CARD -->
-                <div class="col">
+                <!-- FENTY BEAUTY CARD -->
+                <div class="col" role="listitem">
                     <div class="works__card-overlay h-100">
                         <a 
                         class="works__card card1 h-100" 
-                        href="works/reconquista.html"
-                        aria-labelledby="reconquista-title reconquista-desc" 
+                        href="works/fenty.html"
+                        aria-labelledby="fenty-title fenty-desc" 
                         tabindex="0"
                         >
+                            <span class="works__card-label">Case study</span>
                             <figcaption class="works__card-text">
-                                <h5 class="works__card-title">Reconquista</h5>
-                                <p class="works__card-subtitle">Cover design</p>
+                                <h5 class="works__card-title">Fenty Beauty</h5>
+                                <p class="works__card-subtitle">Web Design</p>
                             </figcaption>
-                            <div class="works__card-background" id="reconquista">
+                            <div class="works__card-background" id="fenty">
                                 <img class="works__card-image img-fluid" 
-                                    src="../assets/images/works/reconquista/reconquista--card-front.webp" 
-                                    alt="A book in front of a pile of book. The cover is a blue rose splattered with blood, with the title in yellow.">
+                                    src="../assets/images/works/fenty/card-front.jpg" 
+                                    alt="Fenty Beauty logo in black on a light background">
                             </div>
                         </a>
                     </div>
                 </div>
+
             </div>
         </section>
     </main>

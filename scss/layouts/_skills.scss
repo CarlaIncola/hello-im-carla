@@ -31,3 +31,62 @@
         }
     }
 }
+
+
+
+
+.golden-box {
+    background-color: rgba(255, 193, 7, 0.1);
+    border: 1px solid $color-gold;
+    box-shadow: 4px 4px 8px 0px rgb(217, 212, 198);
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.gray-box {
+    background-color: rgb(233, 236, 239, 0.7);
+    border: 1px solid #b6bfc7;
+    box-shadow: 4px 4px 8px 0px rgb(217, 212, 198);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+
+.skills_item--mastered-star {
+    color: $color-gold;
+    font-size: 12px;
+}
+
+.skills__legend {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+    .legend__item {
+        width: 200px;
+        justify-content: center;
+    }
+    .legend-color {
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        border-radius: 50%; // for circle, remove if you want square
+        background-color: gray; // default, change per class
+    }
+
+    .mastered {
+        background-color: rgba(255, 193, 7, 0.2);
+        border: 1px solid $color-gold;
+    }
+
+        .well-known {
+        background-color: #e9ecef;
+        border: 1px solid #adb5bd;
+        }
+
+    span {
+        font-size: 14px;
+        color: $color-dark;
+    }
+}

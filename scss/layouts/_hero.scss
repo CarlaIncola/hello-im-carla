@@ -1,0 +1,392 @@
+@use '../variables' as *;
+
+// MOBILE
+.home {
+  max-width: 100vw;
+
+  .home__grid {
+
+    .home__grid-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+      margin: 0 auto;
+      padding: 2rem 1rem;
+    
+      .home__grid-row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        width: 100%;
+      }
+    
+      .home__grid-right-column,
+      .home__grid-left-column {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    
+      .home__image-placeholder {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+    
+        .home__image {
+          width: 100%;
+          height: auto;
+          display: block;
+          margin: 0 auto;
+        }
+      }
+    }
+    
+  }
+}
+
+.home__subheadline {
+    font-size: 32px;
+    line-height: 40px;
+    font-weight: 900;
+    margin-bottom: 24px;
+    text-align: center;
+}
+
+.home__subheadline--gradient {
+  background: linear-gradient(45deg, #00c3bd, #ff007b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  font-weight: 400;
+}
+
+// CLIENTS MARQUEE
+.home__clients-wrapper {
+  width: 100%;  
+  overflow: hidden;
+  .marquee {
+    display: block;
+    width: 400px;
+    outline: none;
+
+    .marquee__track {
+      display: flex;
+      gap: 0px;
+      align-items: center;
+      will-change: transform;
+      animation: marquee 20s linear infinite;
+    
+      .hero__logos {
+        height: 40px;
+        flex-shrink: 0;
+      }
+    }
+  }
+}
+
+.marquee:hover .marquee__track,
+.marquee:focus .marquee__track,
+.marquee:focus-within .marquee__track {
+  animation-play-state: paused;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .marquee__track {
+    animation: none;
+  }
+}
+
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
+
+
+
+.about-shortcut {
+  position: fixed;
+  right: 0;                  
+  top: 70%;                  
+  transform: translateY(-50%) rotate(-90deg);
+  transform-origin: center center;
+  z-index: 2000;
+
+  font-size: 16px;
+  font-weight: 200;
+  text-transform: uppercase;
+  color: $color-dark;
+  text-decoration: none;
+  background: transparent;
+
+  /* Controls spacing from viewport edge */
+  padding: 0 0px;            // horizontal padding along rotated text
+  margin-right: -120px;         // distance from right edge
+  white-space: nowrap;        // keeps text on one line
+
+  &:hover {
+    color: $color-primary;
+  }
+}
+
+// TABLET
+@media (min-width: 767.9px) {
+  .home__subheadline {
+    font-size: 64px;
+    line-height: 72px;
+    margin-bottom: 24px;
+    text-align: center;
+}
+
+.about-shortcut {
+  position: fixed;
+  right: 0;                  
+  top: 50%;                  
+  transform: translateY(-50%) rotate(-90deg);
+  transform-origin: center center;
+  z-index: 2000;
+
+  font-size: 18px;
+  font-weight: 200;
+  text-transform: uppercase;
+  color: $color-dark;
+  text-decoration: none;
+  background: transparent;
+
+  /* Controls spacing from viewport edge */
+  padding: 0 0px;            // horizontal padding along rotated text
+  margin-right: -100px;         // distance from right edge
+  white-space: nowrap;        // keeps text on one line
+
+  &:hover {
+    color: $color-primary;
+  }
+}
+    .home {
+      .home__grid {
+        .home__grid-container {
+          width: 640px;
+            .home__grid-row {
+                
+              .home__grid-right-column {
+                // CLIENTS MARQUEE
+              .home__clients-wrapper {
+                width: 100%;     // takes the width of right column
+                overflow: hidden; // ensures content doesn't spill out
+  
+                .marquee {
+                  display: block;
+                  width: 600px;
+                  overflow: hidden;   // 👈 key: clips logos to container
+                  outline: none;
+  
+                  .marquee__track {
+                    display: flex;
+                    gap: 0px;               // spacing between logos
+                    align-items: center;
+                    will-change: transform;
+                    animation: marquee 30s linear infinite;
+                  
+                    .hero__logos {
+                      height: 40px;            // keep logo size
+                      flex-shrink: 0;
+                    }
+                  }
+                }
+              }
+            }
+              }
+                .home__grid-left-column {
+                    
+    
+                    .home__image-placeholder {
+                        display: flex;
+                        flex-direction: column;
+                        max-height: 100%;
+    
+                        .home__image {
+                                width: 100%;
+                                align-self: center;
+                                height: auto;
+                            
+                        }
+                    }
+                }
+            }
+        }
+      }
+    }
+
+
+// LAPTOP
+@media (min-width: 991.9px) {
+  .home__subheadline {
+    font-size: 74px;
+    line-height: 82px;
+    margin-bottom: 24px;
+    text-align: center;
+}
+  .home {
+    .home__grid {
+      .home__grid-container {
+        width: 800px;
+          .home__grid-row {
+            .home__grid-right-column {
+              // CLIENTS MARQUEE
+              .home__clients-wrapper {
+                width: 100%;     // takes the width of right column
+                overflow: hidden; // ensures content doesn't spill out
+  
+                .marquee {
+                  display: block;
+                  width: 700px;
+                  overflow: hidden;   // 👈 key: clips logos to container
+                  outline: none;
+  
+                  .marquee__track {
+                    display: flex;
+                    gap: 0px;               // spacing between logos
+                    align-items: center;
+                    will-change: transform;
+                    animation: marquee 30s linear infinite;
+                  
+                    .hero__logos {
+                      height: 50px;            // keep logo size
+                      flex-shrink: 0;
+                    }
+                  }
+                }
+              }
+            }
+              .home__grid-left-column {
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: center;
+                  align-items: center;
+                  max-height: 100%;
+  
+                  .home__image-placeholder {
+  
+                      .home__image {
+                          width: 60%;
+                          align-self: center;
+                          height: auto;
+                      }
+                  }
+              }
+          }
+      }
+    }
+  }
+}
+
+// DESKTOP
+@media (min-width: 1200px) {
+    .home {
+      .home__grid {
+        .home__grid-container {
+          width: 1000px;
+          
+            .home__grid-row {
+                .home__grid-left-column {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    max-height: 100%;
+                }
+
+                .home__grid-right-column {
+                  // CLIENTS MARQUEE
+                  .home__clients-wrapper {
+                    width: 700px;
+                    overflow: hidden;
+                  
+                    .marquee {
+                      position: relative;
+                      width: 100%;
+                      overflow: hidden;
+                  
+                      .marquee__track {
+                        display: flex;
+                        width: calc(200%); // two images side by side
+                        animation: marquee 60s linear infinite;
+                  
+                        .hero__logos {
+                          width: 70%; // each takes half of the track
+                          height: auto;
+                          flex-shrink: 0;
+                        }
+                      }
+                    }
+                  }
+                  
+                  // The loop animation
+                  @keyframes marquee {
+                    0% {
+                      transform: translateX(0);
+                    }
+                    100% {
+                      transform: translateX(-50%);
+                    }
+                  }
+                  
+                  
+                  // Keyframes for infinite scroll
+                  @keyframes marquee {
+                    from {
+                      transform: translateX(0);
+                    }
+                    to {
+                      transform: translateX(-50%);
+                    }
+                  }
+                  
+                }
+            }
+        }
+      }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.fixed-note {
+  position: fixed;
+  bottom: 40px;   // distance from bottom of viewport
+  left: 40px;     // distance from left of viewport
+  font-size: 12px;
+  color: $color-dark;
+  opacity: 0.8;
+  z-index: 1500;  // above most elements but below overlays
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  pointer-events: none; // ensures it doesn't block clicks
+}
+
+
+
+.home__main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+  text-align: center;
+}

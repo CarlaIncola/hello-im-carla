@@ -1,42 +1,97 @@
 @use '../variables' as *;
 
 // MOBILE FIRST
-.contact__grid-left-column {
-    
-    .page__featured-text {
-        line-height: 36px;
+
+.contact__header {
+    background-color: $color-dark;
+    color: $color-light;
+}
+.header__link-contact, .header__brand-contact {
+    color: $color-light !important;
+}
+
+.main__contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    background-color: $color-dark;
+
+    .contact__title {
+        font-size: 32px;
+        color: $color-light;
     }
+}
+.footer__link-contact {
+    color: $color-light !important;
+}
+.contact__grid-column {
     .contact__links {
         display: flex;
         justify-content: center;
         gap: 10px;
 
         .contact__links-item {
-            color: $color-primary;
+            color: $color-light;
 
             &:hover{
-                color: $color-dark;
+                color: $color-light;
                 transition: all 0.4s ease-out;
             }
+        }
+
+        .contact__links-divider {
+            color: $color-secondary;
+        }
+        
+    }
+}
+.contact__footer {
+    background-color: $color-dark !important;
+    
+
+    .contact-footer__menu-item {
+        color: $color-light !important;
+    }
+}
+
+// Active + Focused links
+.header__link-contact--active,
+.header__link-contact:focus {
+    color: $color-light !important;
+    font-weight: 700;
+
+    &::after {
+        content: "•";
+        position: absolute;
+        left: 50%;
+        bottom: -8px;
+        transform: translateX(-50%);
+        font-size: 14px;
+        color: $color-light !important;
+    }
+}
+
+// TABLET
+@media (min-width: 767.9px) {
+    .main__contact {
+        .contact__title {
+            font-size: 68px;
+            font-size: 76px;
         }
     }
 }
 
-.contact__grid-right-column {
-    .margin_top {
-        padding-top: 12px;
-    }
-    
-    .contact__list-item {
-        margin-bottom: 12px;
-    }
-}
-
-// TABLET / DESKTOP
-@media (min-width: 768px) {
-    .contact__grid-right-column {
-        .page__subtitle {
-            margin-top: 0px;
+// LAPTOP
+@media (min-width: 991.9px) {
+    .main__contact {
+        .contact__title {
+            font-size: 78px;
+            line-height: 86px;
         }
     }
 }

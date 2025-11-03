@@ -14,14 +14,14 @@
 }
 
 .progress {
-    max-height: 10px;
+    max-height: 4px;
     background-color: #e9ecef;
     border-radius: 100%;
     overflow: hidden;
 
     .skills__progress-bar {
-        height: 10px;
-        background-color: $color-primary;
+        height: 4px;
+        background-color: $color-dark;
         transition: width 0.6s ease;
     }
 }

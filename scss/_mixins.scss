@@ -100,26 +100,25 @@
 }
 
 @mixin button {
-    background-color: $color-dark;
+    background-color: $color-light;
     text-align: center;
     border: 1px solid;
     border-color: $color-dark;
     text-decoration: none;
-    color: $color-light;
-    border-radius: 8px;
+    color: $color-dark;
+    border-radius: 50px;
     padding: 8px 24px;
     font-weight: 600;
     font-size: 12px;
-    box-shadow: 1px 1px 5px 0px $color-dark;
     
     .button__text {
         @include button-text;
     }
 
     &:hover {
-        background-color: $color-primary;
-        border-color: $color-primary;
-        box-shadow: 1px 1px 5px 0px $color-secondary;
+        background-color: $color-dark;
+        border-color: $color-dark;
+        color: $color-light;
         transition: all 0.2s ease-out;
 
         .button__text {

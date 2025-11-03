@@ -26,52 +26,65 @@
     font-size: 24px;
 }
 
-@media (min-width: 768px) {
-    .about__grid-container {
-        
-        .about__grid-row {
-            
-            .about__grid-left-column {
-                display: flex;
-                flex-direction: column;
-                max-height: 100%;
-
-                .about__image-placeholder {
-                    display: flex;
-                    flex-direction: column;
-                    max-height: 100%;
-
-                    .about__image {
-                            width: 100%;
-                            align-self: center;
-                            height: auto;
-                        
-                    }
-                }
-            }
-        }
-    }
+// Default: mobile stacked
+.about__grid-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
+.about__image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+// TABLET
+@media (min-width: 767.9px) {
+    .about__main {
+        padding-top: 48px !important;
+    }
+  .about__grid-row {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .quote {
+    align-self: start;
+  }
+}
+
+// Desktop layout
+@media (min-width: 991.9px) {
+
+
+  .about__grid-row {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .about__grid-left-column {
+    flex: 1; // Equivalent to 1/3
+    max-width: 33.3333%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .about__grid-right-column {
+    flex: 2; // Equivalent to 2/3
+    max-width: 66.6667%;
+    padding-left: 2rem;
+  }
+}
+
+// Optional larger screen refinement
 @media (min-width: 1200px) {
     .about__grid-container {
-        
-        .about__grid-row {
-            
-            .about__grid-left-column {
-                display: flex;
-                flex-direction: column;
-                max-height: 100%;
-
-                .about__image-placeholder {
-                    
-                    .about__image {
-                        width: 60%;
-                        align-self: center;
-                        height: auto;
-                    }
-                }
-            }
-        }
+        padding-left: 20px;
+        padding-left: 20px;
     }
+  .about__image {
+    width: 100%;
+  }
 }

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="ad.size" content="width=728,height=90">
+<title>BB_TopDeals_23Q2_standard_728x90</title>
+<!--
+Use the following two lines on the first frame to change the border color.
+mlad.borderColor = "#000000";
+mlad.updateBorder();
+-->
+<style> 
+	.containers,
+	#canvas {
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		box-sizing: border-box;
+		overflow:hidden;
+	}
+	#bannerContainer {
+		background-color:rgba(255, 255, 255, 1.00);
+		cursor: pointer;
+	}
+	#detailsHitArea {
+		position: absolute;
+	}
+	.passive {
+		pointer-events:none;
+	}
+</style>
+<!-- Google-hosted createJS library -->
+<script src="https://s0.2mdn.net/ads/studio/cached_libs/createjs_2019.11.15_min.js"></script>
+<script src="BB_TopDeals_23Q2_standard_728x90.js"></script>
+<script>
+var canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
+function init() {
+	canvas = document.getElementById("canvas");
+	anim_container = document.getElementById("bannerContainer");
+	dom_overlay_container = document.getElementById("dom_overlay_container");
+	var comp=AdobeAn.getComposition("AD2FE7DEA29E43888FA6F379B7DE4C0A");
+	var lib=comp.getLibrary();
+	var loader = new createjs.LoadQueue(false);
+	loader.addEventListener("fileload", function(evt){handleFileLoad(evt,comp)});
+	loader.addEventListener("complete", function(evt){handleComplete(evt,comp)});
+	var lib=comp.getLibrary();
+	loader.loadManifest(lib.properties.manifest);
+}
+function handleFileLoad(evt, comp) {
+	var images=comp.getImages();	
+	if (evt && (evt.item.type == "image")) { images[evt.item.id] = evt.result; }	
+}
+function handleComplete(evt,comp) {
+	//This function is always called, irrespective of the content. You can use the variable "stage" after it is created in token create_stage.
+	var lib=comp.getLibrary();
+	var ss=comp.getSpriteSheet();
+	var queue = evt.target;
+	var ssMetadata = lib.ssMetadata;
+	for(i=0; i<ssMetadata.length; i++) {
+		ss[ssMetadata[i].name] = new createjs.SpriteSheet( {"images": [queue.getResult(ssMetadata[i].name)], "frames": ssMetadata[i].frames} )
+	}
+	exportRoot = new lib.BB_TopDeals_23Q2_standard_728x90();
+	stage = new lib.Stage(canvas);	
+	mlad = {
+		maxDuration: null,
+		borderWidth: 1,
+		authoringScale: 1,
+		borderWidth: 1,
+		borderColor: "#000000",
+		defineCTA: function(){
+			document.getElementById("bannerContainer").addEventListener("mouseover",function(){exportRoot.mc_cta.gotoAndPlay("hi");});
+			document.getElementById("bannerContainer").addEventListener("mouseout",function(){exportRoot.mc_cta.gotoAndPlay("bye");});
+		},
+			updateBorder: function(){
+			document.getElementById("border").style.border = mlad.borderColor + " solid " + mlad.borderWidth + "px";
+		},
+		defineDetails: function(){
+			document.getElementById("detailsHitArea").setAttribute( "style",
+				"height:"+ exportRoot.detailsHitArea.nominalBounds.height + "px;" +
+				"width:"+ exportRoot.detailsHitArea.nominalBounds.width + "px;" +
+				"left:"+ exportRoot.detailsHitArea.x/mlad.authoringScale + "px;" +
+				"top:"+	exportRoot.detailsHitArea.y/mlad.authoringScale + "px;"
+			);
+			document.getElementById("detailsHitArea").addEventListener("mouseover",function(){exportRoot.details.gotoAndPlay("hi");});
+			document.getElementById("detailsHitArea").addEventListener("mouseout",function(){exportRoot.details.gotoAndPlay("bye");});
+		}
+	};
+	stage.update();
+	var containerElements = document.querySelectorAll(".containers");
+	for (var i = 0; i < containerElements.length; i++) {
+		containerElements[i].setAttribute( "style",
+			"height:" + "90"/mlad.authoringScale + "px;" +
+			"width:"  + "728"/mlad.authoringScale + "px;"
+		);
+	}
+	document.getElementById("border").style.border = mlad.borderColor + " solid " + mlad.borderWidth + "px";
+	//Registers the "tick" event listener.
+	fnStartAnimation = function() {
+		stage.addChild(exportRoot);
+		createjs.Ticker.framerate = lib.properties.fps;
+		createjs.Ticker.addEventListener("tick", stage);
+	}	    
+	//Code to support hidpi screens and responsive scaling.
+	AdobeAn.makeResponsive(false,'both',false,2,[canvas]);	
+	AdobeAn.compositionLoaded(lib.properties.id);
+	fnStartAnimation();
+}
+</script>
+</head>
+<body onload="init();" style="margin:0px;">
+	<div id="bannerContainer" class="containers" style="width:728px; height:90px">
+		<canvas id="canvas" width="728" height="90" style="position: absolute; display: block; background-color:rgba(255, 255, 255, 1.00);"></canvas>
+		<div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:728px; height:90px; position: absolute; left: 0px; top: 0px; display: block;">
+		</div>
+		<div id="border" class="containers"></div>
+		<div id="detailsHitArea"></div>
+	</div>
+	<script>
+	var clickTag = "";
+	document.getElementById("bannerContainer").addEventListener("click", function(){window.open(window.clickTag);});
+	</script>
+</body>
+</html>
