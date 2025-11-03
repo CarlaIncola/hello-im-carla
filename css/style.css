@@ -455,6 +455,10 @@ body .main__subpages {
   font-weight: 400;
 }
 
+.page__body-copy {
+  flex-wrap: wrap;
+}
+
 .home__clients-wrapper {
   width: 100%;
   overflow: hidden;
