@@ -1,56 +1,109 @@
 @use '../variables' as *;
 
-// MOBILE FIRST
 .index__grid {
     display: flex;
-    flex-direction: column;
     justify-content: center;
+    align-items: center;
     height: 100vh;
-    padding: 0px 50px 0px 50px;
+    text-align: center;
+    padding: 0 20px;
 
     .index__container {
         display: flex;
         flex-direction: column;
+        align-items: center;
         justify-content: center;
-        text-align: left;
 
-        .index__link {
-            text-decoration: none;
-            color: $color-secondary;
-            font-size: 32px;
-            font-weight: 200;
-            line-height: 38px;
+        .index__title {
+            font-family: 'Karla', sans-serif;
+            font-size: 48px;
+            position: relative;
+            display: inline-block;
+            margin-bottom: 30px;
 
-            &:hover {
-                color: $color-primary;
-                font-weight: 400;
-                transition: all 0.2s ease-out;
+            .index__name {
+                .name--light {
+                    font-weight: 400;
+                }
+
+                .name--bold {
+                    font-weight: 800;
+                }
+            }
+
+            .index__underline {
+                position: absolute;
+                bottom: -10px;
+                left: 0;
+                width: 0%;
+                height: 3px;
+                background: linear-gradient(45deg, #00c3bd, #ff007b);
+                border-radius: 2px;
+                transition: width 1.2s ease;
+            }
+
+            .index__underline.draw {
+                width: 100%;
             }
         }
-    }
-}
 
-// TABLET / DESKTOP
-@media (min-width: 768px)  {
-    .index__grid {
-        padding: 0px 120px 0px 120px;
-    
-        .index__container {
-            
-            .index__title {
-                font-size: 80px;
-            }
-
+        .index__buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        
             .index__link {
-                font-size: 72px;
-                line-height: 78px;
-    
-                &:hover {
+                position: relative;
+                background-color: $color-light;
+                border: 1px solid $color-dark;
+                border-radius: 50px;
+                padding: 8px 24px;
+                text-decoration: none;
+                color: $color-dark;
+                font-weight: 600;
+                font-size: 12px;
+                text-align: center;
+                text-transform: uppercase;
+                transition: all 0.3s ease;
+        
+                // Hover text effect
+                &::after {
+                    content: attr(data-hover);
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    opacity: 0;
                     color: $color-primary;
-                    font-weight: 400;
-                    transition: all 0.2s ease-out;
+                    font-weight: 600;
+                    font-size: 12px;
+                    transition: opacity 0.3s ease;
+                    pointer-events: none;
+                }
+            
+                &:hover {
+                    color: transparent;
+                    border-color: $color-primary;
+                }
+            
+                &:hover::after {
+                    opacity: 1;
+                }
+            
+                &:focus {
+                    outline: none;
+                    box-shadow: 0 0 0 3px rgba($color-primary, 0.3);
                 }
             }
         }
+        
+    }
+}
+
+/* Tablet / Desktop */
+@media (min-width: 767.9px) {
+    .index__title {
+        font-size: 80px !important;
     }
 }
